@@ -1,8 +1,11 @@
+ @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
 body{
     box-sizing: border-box;
     background-color: #DFC3EB;
     border: 5px solid black;
     border-radius: 5px;
+    margin: 10px;
 }
 .cabecalho{
     background-color: #E04ACA;
@@ -11,6 +14,8 @@ body{
 .cabecalho__titulo{
     display: flex;
     justify-content: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
 
 }
 .cabecalho__subtitulo{
@@ -19,6 +24,14 @@ body{
     justify-content: end;
     /*border: 5px solid black;*/
 }
+.botao{
+    text-decoration: #D5BADE;
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    padding: 0.625rem;
+    border: 0.3125rem inset #201B4F;
+    border-radius: 0.625rem;
+}
 .parte1{
     display: flex;
     flex-direction: column;
@@ -26,14 +39,70 @@ body{
 .apresentacao{
     display: flex;
     justify-content: space-between;
+    gap: 3.125rem;
     padding: 5%;
-    gap: 50px;
+}
+.apresentacao__conteudo{
+    align-self: center;
+}
+.apresentacao__conteudo--titulo{
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
 }
 .apresentacao__conteudo--paragrafo{
     font-size: 1.5rem;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 600;
 }
 .apresentacao__imagem{
     width: 30%;
+    height: 20%;
+    align-self: center;
+}
+.apresentacao__lista{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.125rem;
+    padding: 5%;
+}
+.apresentacao__lista--titulo{
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+}
+.apresentacao__lista--motivos{
+    font-size: 1.5rem;
+    font-family: "Merriweather", serif;
+}
+.apresentacao__lista--imagem{
+    width: 30%;
+    height: 20%;
+    align-self:center
+}
+.apresentacao__fotos{
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    padding: 5%;
+}
+.apresentacao__fotos--titulo{
+    align-self: center;
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+}
+.apresentacao__fotos--sequencia{
+    display: flex;
+    justify-content: space-evenly;
+    border: 5px inset black;
+}
+.apresentacao__fotos--sequencia--foto1{
+    width: 20%;
+    height: 20%;
+}
+.apresentacao__fotos--sequencia--foto2{
+    width: 20%;
+    height: 20%;
 }
 .rodape{
     background-color: #E04ACA;
@@ -43,10 +112,16 @@ body{
     font-size: 2rem;
     display: flex;
     justify-content: center;
+    font-family: "Dancing Script", cursive;
     /*border: 5px solid black;*/
 }
 .rodape__subtitulo{
     display: flex;
     justify-content: flex-end;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
     font-size: 1.25rem;
+}
+p{
+    line-height: 200%;
 }
