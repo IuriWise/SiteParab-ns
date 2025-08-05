@@ -25,7 +25,8 @@ body{
     /*border: 5px solid black;*/
 }
 .botao{
-    text-decoration: #D5BADE;
+    text-decoration: none ;
+    color: pink;
     font-family: "Merriweather", serif;
     font-size: 1rem;
     padding: 0.625rem;
@@ -94,7 +95,6 @@ body{
 .apresentacao__fotos--sequencia{
     display: flex;
     justify-content: space-evenly;
-    border: 5px inset black;
 }
 .apresentacao__fotos--sequencia--foto1{
     width: 20%;
